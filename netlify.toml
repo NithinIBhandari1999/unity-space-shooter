@@ -2,4 +2,10 @@
     for = "/Build/*.js.gz"
     [headers.values]
         Content-Encoding = "gzip"
+        Content-Type = "application/javascript"
+
+[[headers]]
+    for = "/Build/*.wasm.gz"
+    [headers.values]
+        Content-Encoding = "gzip"
         Content-Type = "application/wasm"
